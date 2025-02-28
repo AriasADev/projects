@@ -1,0 +1,3 @@
+> Make sure mouse tracking works correctly
+> Flesh out background to make animation smoother and perhaps change animations and follow effect entirely
+> make the rest of the website lol

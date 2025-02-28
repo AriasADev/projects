@@ -1,0 +1,70 @@
+body {
+  background-color: #15191f;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+  
+  height: 100vh;
+  width: 100vw;
+  
+  font-family: 'Montserrat';
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.bg__gradient {
+  height: 800px;
+  width: 800px;
+  background-image: linear-gradient(90deg, #eb3434, #eb5e34, #eb8334, #eba434, #ebcc34, #ebeb34, #c3eb34, #89eb34, #58eb34, #34eb52, #34ebcc, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3, #eb3489, #eb3461);
+  filter: blur(500px);
+  border-radius: 100%;
+  background-size: 1000% 100%;
+  
+  animation: gradient 10s infinite ease-out;
+  
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  
+  z-index: 0
+}
+
+@keyframes gradient {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 100%}
+}
+
+
+
+.card {
+  height: 300px;
+  width: 450px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255, 50%);
+  background-image: linear-gradient(135deg, rgb(255, 255, 255, 15%), rgb(21, 25, 31, 0%));
+  transition: all ease;
+  
+  cursor: pointer;
+  
+  z-index: 5;
+}
+
+.card:hover {
+  filter: drop-shadow(0 0 0px rgb(255, 255, 255, 60%));
+  color: rgb(255, 255, 255, 80%);
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+

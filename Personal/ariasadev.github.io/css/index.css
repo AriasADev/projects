@@ -1,0 +1,189 @@
+:root {
+  --heliotrope-light: #d984fc;
+  --heliotrope-medium: #d660fc;
+  --heliotrope-dark: #ca43fc;
+  --heliotrope-darker: #e442fc;
+  --mauve-light: #e3b1fc;
+  --mauve-dark: #d49cfc;
+  --electric-violet-light: #cb15fc;
+  --electric-violet-medium: #ca2ffc;
+  --electric-violet-dark: #aa0dfc;
+  --electric-violet-darker: #b412fc;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: #fff
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+body {
+  position: relative;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+#content{
+  margin: 0;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  top: 45%;
+  left: 50%;
+  
+}
+
+
+span {
+  color: white;
+}
+
+h2 {
+  font-size: 55px;
+  line-height: 75px;
+  white-space: pre-line;
+}
+
+/* Social media buttons */
+.social-media {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  margin-top: 20px;
+}
+
+
+/* Boxicons icon styling */
+.button i {
+  font-size: 24px;
+  line-height: 1;
+}
+
+
+
+#spacer{
+  height: 20px;
+}
+
+#spacer-two{
+  height: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #spacer{
+    height: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #content{
+  margin: 0;
+  padding: 0px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+#profile {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+.header {
+  font-size: 55px;
+  line-height: 75px;
+  white-space: nowrap;
+}
+
+
+
+/* .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */ 
+
+.bio {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bio span {
+  display: inline-block;
+  transition: color 0.3s ease; 
+}
+
+.bio span:hover {
+  color: var(--electric-violet-dark); 
+}
+
+.heading {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.bellohello {
+  color: white;
+}
+
+#profile {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  border-style: solid;
+  border-width: 5px;
+  align-items: center;
+  border: 5px solid var(--electric-violet-dark);
+}
+
+.button {
+  background-color: var(--electric-violet-dark);
+  border: none;
+  color: white;
+  padding: 12px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, col3s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--electric-violet-dark); /* Dark colour text/icon on hover */
+}
